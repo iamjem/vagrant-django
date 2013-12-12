@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "openssl"
-    chef.add_recipe "postgressql::server"
+    chef.add_recipe "postgresql::server"
 
     chef.json = { 
       :postgresql => {
